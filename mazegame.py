@@ -12,19 +12,19 @@ def basicroom():
     print('|__s___|)')
 
 def movement():
-    global move  # Make move accessible to coords()
+    global move 
     move = input('\n [w, a, s, d] \n')
 
 def coords():
-    global x, y  # Need to declare these as global to modify them
+    global x, y
     if move == 'w':
-        x += 1  # Need += instead of +
+        x = x + 1
     elif move == 'a':
-        y -= 1  # Need -= instead of -
+        y = y - 1
     elif move == 's':
-        x -= 1  # Need -= instead of -
+        x = x - 1
     elif move == 'd':
-        y += 1  # Changed to y += 1 since d should move right (increase y)
+        y = y + 1
 
 def debug_coordinates():
     print(x, y)
