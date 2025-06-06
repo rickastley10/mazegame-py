@@ -1,4 +1,4 @@
-import time
+#the maze game
 print('welcome to the MAZE')
 input('press [enter] to start')
 x = 0
