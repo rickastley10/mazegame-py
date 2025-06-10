@@ -4,6 +4,8 @@ input('press [enter] to start')
 x = 0
 y = 0
 level = 0
+def clear():
+    print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
 def basicroom():
     print('___w___')
     print('|      |')
@@ -60,5 +62,6 @@ while 1 == 1:
     debug_coordinates()
     basicroom()
     movement()
+    clear()
     coords()
     levelfinish()
